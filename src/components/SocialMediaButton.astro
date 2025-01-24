@@ -1,0 +1,18 @@
+---
+const { href, src, alt } = Astro.props;
+---
+<a
+  class="flex items-center p-2 rounded bg-gradient-to-r from-[#0e7490] via-[#3b82f6] to-[#4f46e5]
+                transition delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 hover:from-[#4f46e5] hover:to-[#0e7490] hover:shadow-lg hover:shadow-[#3b82f6]/60"
+  href={href}
+  target="_blank"
+  rel="noopener"
+>
+  <img
+    class="size-7 mx-2"
+    src={src}
+    alt={alt}
+    loading="lazy"
+  />
+  <p><slot/></p>
+</a>
