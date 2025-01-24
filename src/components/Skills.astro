@@ -1,0 +1,78 @@
+---
+import angular from "../assets/angular.svg";
+import react from "../assets/react.svg";
+import flutter from "../assets/flutter.svg";
+import aspnet from "../assets/aspnet.svg";
+import azure from "../assets/azure.svg";
+import nextjs from "../assets/nextjs.svg";
+import vercel from "../assets/vercel.svg";
+import mongo from "../assets/mongo.svg";
+import nodejs from "../assets/node-js.svg";
+import sap from "../assets/languages/sap.svg";
+import sqlserver from "../assets/languages/microsoftsqlserver.svg";
+import material from "../assets/languages/material-ui.svg";
+import python from "../assets/languages/python.svg";
+import tailwind from "../assets/languages/tailwind.svg";
+import bootstrap from "../assets/languages/bootstrap.svg";
+import css from "../assets/languages/css.svg";
+import vscode from "../assets/tools/visual-studio-code.svg";
+import vs from "../assets/tools/visual-studio.svg";
+import androidstudio from "../assets/tools/android-studio.svg";
+import jira from "../assets/tools/jira.svg";
+import trello from "../assets/tools/trello.svg";
+
+const SKILLS = [
+  {
+    title: "Backend",
+    description:
+      "Throughout my career as a software developer, I have excelled primarily in backend development, which is my strength, and in which I perform most effectively, working with various technologies, patterns, and software architectures.",
+    items: [aspnet, nodejs, python, mongo, sqlserver, sap],
+  },
+  {
+    title: "Frontend",
+    description:
+      "Throughout my career as a software developer, I have excelled primarily in backend development, which is my strength, and in which I perform most effectively, working with various technologies, patterns, and software architectures.",
+    items: [
+      angular,
+      react,
+      flutter,
+      nextjs,
+      tailwind,
+      material,
+      bootstrap,
+      css,
+    ],
+  },
+  {
+    title: "Tools & cloud",
+    description:
+      "Throughout my career as a software developer, I have excelled primarily in backend development, which is my strength, and in which I perform most effectively, working with various technologies, patterns, and software architectures.",
+    items: [vscode, vs, androidstudio, jira, trello, azure, vercel],
+  },
+];
+---
+
+<section class="mx-auto max-w-5xl my-40" id="skills">
+  <div>
+    <h1 class="text-balance text-xl font-bold tracking-tight sm:text-3xl">
+      SKILLS
+    </h1>
+  </div>
+  <div class="grid grid-cols-3 mt-10">
+    {
+      SKILLS.map((skill) => (
+        <div class="max-w-xs rounded overflow-hidden shadow-lg bg-[#130a2c]">
+          <div class="px-4 py-4">
+            <div class="font-bold text-xl mb-2">{skill.title}</div>
+            <p class="text-pretty">{skill.description}</p>
+          </div>
+          <div class="grid grid-cols-4 px-6 py-4 gap-4">
+            {skill.items.map((item) => (
+              <img class="size-10" src={item.src} alt="" />
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

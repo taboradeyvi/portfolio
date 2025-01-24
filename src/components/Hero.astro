@@ -1,0 +1,48 @@
+---
+import linkedin from '../assets/linkedin-white.svg';
+import github from '../assets/github-mark-white.svg';
+import email from '../assets/email-white.svg';
+import me from '../assets/me.webp';
+import Badge from './Badge.astro';
+---
+<section class="mx-auto max-w-5xl mt-40">
+    <article class="grid grid-cols-3 gap-x-10 justify-around m-10">
+        <div class="col-span-2 flex flex-col justify-center gap-6">
+            <h1 class="text-balance text-3xl font-bold tracking-tight sm:text-5xl">I'm Deyvi Tabora <Badge>Available to work</Badge></h1>
+            <p class="text-pretty">I'm a <span class="font-semibold text-xl text-[#3b82f6]">full-stack developer</span> with extensive experience in software development and deployment. My motivation is driven by continuous innovation and a strong commitment to achieving technical excellence, which is reflected in my collaborative work with development teams.</p>
+            <div class="flex gap-6">
+                <a class="flex items-center p-2 rounded bg-gradient-to-r from-[#0e7490] via-[#3b82f6] to-[#4f46e5]
+                transition delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 hover:from-[#4f46e5] hover:to-[#0e7490] hover:shadow-lg hover:shadow-[#3b82f6]/60"
+                href="https://www.linkedin.com/in/deyvi-tabora" target="_blank" rel="noopener">
+                    <img class="size-7 mx-2" src={linkedin.src} alt="Url for mi LinkedIn profile" loading="lazy"/>
+                    <p>LinkedIn</p>
+                </a>
+                <a class="flex items-center p-2 rounded bg-gradient-to-r from-[#0e7490] via-[#3b82f6] to-[#4f46e5]"
+                href="https://github.com/taboradeyvi" target="_blank" rel="noopener">
+                    <img class="size-7 mx-2" src={github.src} alt="Url for mi GitHub profile" loading="lazy"/>
+                    <p>GitHub</p>
+                </a>
+                <a class="flex items-center p-2 rounded bg-gradient-to-r from-[#0e7490] via-[#3b82f6] to-[#4f46e5]"
+                href="mailto:taborapaz@gmail.com" target="_blank" rel="noopener">
+                    <img class="size-7 mx-2" src={email.src} alt="Url for mi email contact" loading="lazy"/>
+                    <p>taborapaz@gmail.com</p>
+                </a>
+            </div>
+        </div>
+        <div>
+            <img class="inline-block size-80 rounded-xl" src={me.src} alt="Deyvi Tabora" loading="lazy" />
+        </div>
+    </article>
+    <article class="flex justify-around mt-20">
+        <p class="text-3xl">
+            <span class="text-4xl font-bold text-[#3b82f6]">+5</span> years of experience
+        </p>
+        <p class="text-3xl">
+            <span class="text-4xl font-bold text-[#3b82f6]">+23</span> complete projects
+        </p>
+        <p class="text-3xl">
+            <span class="text-4xl font-bold text-[#3b82f6]">+21</span> software skills
+        </p>
+    </article>
+    
+</section>

@@ -1,0 +1,102 @@
+---
+import angular from "../assets/angular.svg";
+import react from "../assets/react.svg";
+import flutter from "../assets/flutter.svg";
+import sqlserver from "../assets/languages/microsoftsqlserver.svg";
+import aspnet from "../assets/aspnet.svg";
+import azure from "../assets/azure.svg";
+import nextjs from "../assets/nextjs.svg";
+import vercel from "../assets/vercel.svg";
+import mongo from "../assets/mongo.svg";
+import nodejs from "../assets/node-js.svg";
+import sap from "../assets/languages/sap.svg";
+import date from "../assets/date.svg";
+
+const EXPERIENCE = [
+  {
+    title: "Full-stack developer",
+    company: "Platino Business Group",
+    date: "August 2021 – December 2024",
+    description:
+      "I proposed, planned, and managed software development projects aligned with the company’s strategies and objectives. I coordinated the development team and actively participated in monitoring third-party implementation projects. My work focused on developing custom solutions, integrating external systems, managing cloud-based servers and databases, driving continuous improvement, and supporting the company's strategic goals.",
+    skills: [
+      angular,
+      react,
+      flutter,
+      sqlserver,
+      aspnet,
+      sap,
+      azure,
+      nextjs,
+      vercel
+    ],
+  },
+  {
+    title: "Software Developer",
+    company: "International Systems Group",
+    date: "August 2019 – May 2021",
+    description:
+      "I worked as a software developer specializing in creating scalable, tailored solutions. I contributed to both frontend and backend development, focusing on the design and implementation of modern applications and custom modules for enterprise systems and existing platforms.",
+    skills: [
+      angular,
+      react,
+      flutter,
+      sqlserver,
+      aspnet,
+      mongo,
+      nodejs
+    ],
+  },
+  {
+    title: "Jr Software Developer",
+    company: "Leitz Group",
+    date: "January 2019 – June 2019",
+    description:
+      "I contributed to the development and maintenance of web applications, managed databases, and conducted quality assurance testing to ensure system stability.",
+    skills: [
+      aspnet,
+      sqlserver,
+    ],
+  },
+];
+---
+
+<section class="mx-auto max-w-5xl my-40" id="experience">
+  <div>
+    <h1 class="text-balance text-xl font-bold tracking-tight sm:text-3xl">
+      PROFESSIONAL EXPERIENCE
+    </h1>
+  </div>
+  <div class="mt-10">
+    <ol class="relative border-s border-gray-200 dark:border-gray-700">
+      {
+        EXPERIENCE.map((exp) => (
+          <li class="mb-10 ms-6">
+            <span class="absolute flex items-center justify-center p-2 rounded-full -start-5 ring-4 bg-gradient-to-r from-[#0e7490] from-10% via-[#3b82f6] via-30% to-[#4f46e5] to-90%">
+              <img class="size-5" src={date.src} alt="" />
+            </span>
+            <div class="grid grid-cols-2">
+              <div>
+                <h3 class="flex items-center mb-1 text-xl font-semibold">
+                  {exp.title}
+                </h3>
+                <p class="text-lg">{exp.company}</p>
+                <time class="block mb-2 text-lg font-normal leading-none">
+                  {exp.date}
+                </time>
+                <div class="flex gap-4 mt-10">
+                  {exp.skills.map((skill) => (
+                    <img class="size-8" src={skill.src} alt="" />
+                  ))}
+                </div>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-pretty font-normal">{exp.description}</p>
+              </div>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
