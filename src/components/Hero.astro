@@ -1,40 +1,12 @@
 ---
-import linkedin from "../assets/linkedin-white.svg";
-import github from "../assets/github-mark-white.svg";
-import email from "../assets/email-white.svg";
 import me from "../assets/me.webp";
 import Badge from "./Badge.astro";
+import Email from "./icons/Email.astro";
+import GitHub from "./icons/GitHub.astro";
+import LinkedIn from "./icons/LinkedIn.astro";
+import Download from "./icons/Download.astro";
 import SocialMediaButton from "./SocialMediaButton.astro";
-import download from "../assets/download.svg";
-
-const SOCIALMEDIA = [
-  {
-    title: "LinkedIn",
-    href: "https://www.linkedin.com/in/deyvi-tabora",
-    src: linkedin.src,
-    alt: "Url for mi LinkedIn profile",
-  },
-  {
-    title: "GitHub",
-    href: "https://github.com/taboradeyvi",
-    src: github.src,
-    alt: "Url for mi GitHub profile",
-  },
-  {
-    title: "Email",
-    href: "mailto:taborapaz@gmail.com",
-    src: email.src,
-    alt: "Url for mi email contact",
-  },
-  {
-    title: "Mi resume",
-    href: "https://drive.google.com/file/d/1GrNNRxfFJUQeI1EDWZC7acuqyXqKzrlR/view?usp=sharing",
-    src: download.src,
-    alt: "Download mi resume",
-  },
-];
 ---
-
 <section class="mx-auto max-w-5xl mt-40">
   <article class="grid grid-cols-3 gap-x-10 justify-around m-10">
     <div class="col-span-2 flex flex-col justify-center gap-6">
@@ -50,11 +22,22 @@ const SOCIALMEDIA = [
         teams.
       </p>
       <div class="flex gap-6">
-        {
-          SOCIALMEDIA.map((social) => (
-            <SocialMediaButton {...social}>{social.title}</SocialMediaButton>
-          ))
-        }
+        <SocialMediaButton href="https://www.linkedin.com/in/deyvi-tabora">
+          <LinkedIn />
+          LinkedIn
+        </SocialMediaButton>
+        <SocialMediaButton href="https://github.com/taboradeyvi">
+          <GitHub />
+          GitHub
+        </SocialMediaButton>
+        <SocialMediaButton href="mailto:taborapaz@gmail.com">
+          <Email />
+          Email
+        </SocialMediaButton>
+        <SocialMediaButton href="https://drive.google.com/file/d/1GrNNRxfFJUQeI1EDWZC7acuqyXqKzrlR/view?usp=sharing">
+          <Download />
+          My resume
+        </SocialMediaButton>
       </div>
     </div>
     <div>

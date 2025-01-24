@@ -1,5 +1,6 @@
 ---
-const { href, src, alt } = Astro.props;
+
+const { href } = Astro.props;
 ---
 <a
   class="flex items-center p-2 rounded bg-gradient-to-r from-[#0e7490] via-[#3b82f6] to-[#4f46e5]
@@ -8,11 +9,5 @@ const { href, src, alt } = Astro.props;
   target="_blank"
   rel="noopener"
 >
-  <img
-    class="size-7 mx-2"
-    src={src}
-    alt={alt}
-    loading="lazy"
-  />
-  <p><slot/></p>
+  <p class="flex gap-1"><slot/></p>
 </a>
