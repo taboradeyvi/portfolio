@@ -1,3 +1,7 @@
+---
+import me from "../assets/me2.png";
+---
+
 <section class="mx-auto max-w-5xl my-40" id="about-me">
   <div>
     <h1 class="text-balance text-xl font-bold tracking-tight sm:text-3xl">
@@ -5,12 +9,25 @@
     </h1>
   </div>
   <div class="flex flex-col gap-4 mt-10">
-    <p>
-      Soy estudiante de Ingeniería en Sistemas, tengo 25 años y vivo en
-      Honduras. Soy un apasionado del fútbol y fiel aficionado de la Juventus.
-      Me considero una persona competitiva y perfeccionista, siempre buscando
-      dar lo mejor de mí en todo lo que hago.
-    </p>
+    <div class="flex gap-4">
+      <div class="px-2 pt-2 rounded-2xl bg-blue-400">
+        <img
+        class="inline-block rounded-lg w-40"
+        src={me.src}
+        alt="Deyvi Tabora"
+        loading="lazy"
+      />
+      </div>
+      
+      <p>
+        Soy estudiante de Ingeniería en Sistemas, tengo 25 años y vivo en
+        Honduras. Soy un apasionado del fútbol y fiel aficionado de la Juventus.
+        Me considero una persona competitiva y perfeccionista, siempre buscando
+        dar lo mejor de mí en todo lo que hago. En mis tiempos libres suelo
+        pasar mucho con mis amigos jugando video juegos o comentanto sobre
+        series o anime.
+      </p>
+    </div>
     <p>
       La tecnología es una de mis grandes pasiones, no solo como herramienta
       profesional, sino también como un medio para innovar y aprender
