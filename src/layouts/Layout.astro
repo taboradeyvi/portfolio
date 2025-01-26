@@ -13,7 +13,7 @@ import Navbar from '../components/Navbar.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>Portfolio | Deyvi Tabora</title>
 	</head>
-	<body class="bg-[#070410]">
+	<body class="bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,_rgba(120,_119,_198,_0.3),_rgba(255,_255,_255,_0))]">
 		<Navbar />
 		<slot />
 		<Footer />
@@ -31,6 +31,9 @@ import Navbar from '../components/Navbar.astro';
         flex-direction: column;
         min-height: 100vh;
         overscroll-behavior: none;
+		--tw-bg-opacity: 1;
+		background-color: rgb(10 10 10 / var(--tw-bg-opacity, 1));
+		background-image: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0));
       }
 
 	@media (prefers-reduced-motion: reduce) {
