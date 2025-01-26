@@ -11,6 +11,84 @@ import Sql from "./icons/Sql.astro";
 import Nextjs from "./icons/Nextjs.astro";
 import Eye from "./icons/Eye.astro";
 import Tailwind from "./icons/Tailwind.astro";
+
+const PROJECTS = [
+  {
+    title: "Proyecto de una api",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus magnam eveniet reprehenderit maxime, odit fugit quasi, distinctio aliquid cum molestias ea repellendus accusantium dolore impedit enim soluta animi rerum expedita.",
+    stack: [
+      {
+        title: "Angular",
+        icon: Angular,
+      },
+      {
+        title: "ASP .NET",
+        icon: Csharp,
+      },
+      {
+        title: "MSSQL",
+        icon: Sql,
+      },
+      {
+        title: "Tailwind",
+        icon: Tailwind,
+      },
+    ],
+    preview: "https://github.com/",
+    code: "https://github.com/",
+  },
+  {
+    title: "Proyecto de una api",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus magnam eveniet reprehenderit maxime, odit fugit quasi, distinctio aliquid cum molestias ea repellendus accusantium dolore impedit enim soluta animi rerum expedita.",
+    stack: [
+      {
+        title: "React",
+        icon: React,
+      },
+      {
+        title: "Node js",
+        icon: Nodejs,
+      },
+      {
+        title: "PostgreSQL",
+        icon: Postgresql,
+      },
+      {
+        title: "Tailwind",
+        icon: Tailwind,
+      },
+    ],
+    preview: "https://github.com/",
+    code: "https://github.com/",
+  },
+  {
+    title: "Proyecto de una api",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus magnam eveniet reprehenderit maxime, odit fugit quasi, distinctio aliquid cum molestias ea repellendus accusantium dolore impedit enim soluta animi rerum expedita.",
+    stack: [
+      {
+        title: "Next js",
+        icon: Nextjs,
+      },
+      {
+        title: "Python",
+        icon: Python,
+      },
+      {
+        title: "Mongo db",
+        icon: Mongo,
+      },
+      {
+        title: "Tailwind",
+        icon: Tailwind,
+      },
+    ],
+    preview: "https://github.com/",
+    code: "https://github.com/",
+  },
+];
 ---
 
 <section class="mt-20 px-4 mx-auto max-w-5xl lg:mt-40" id="projects">
@@ -19,130 +97,43 @@ import Tailwind from "./icons/Tailwind.astro";
       RECENT PROJECTS
     </h1>
   </div>
-  <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-4 my-10">
-    <div class="w-full h-[200px] max-h-[280px] lg:h-full lg:max-w-[400px] rounded bg-blue-600"></div>
-    <div>
-      <h1 class="mt-5 text-xl font-semibold mb-5 lg:mt-0">Proyecto de una api</h1>
-      <p class="text-sm md:text-base">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
-        magnam eveniet reprehenderit maxime, odit fugit quasi, distinctio
-        aliquid cum molestias ea repellendus accusantium dolore impedit enim
-        soluta animi rerum expedita.
-      </p>
-      <div class="mt-5">
-        <div class="grid grid-cols-2 md:flex gap-2 md:gap-4">
-          <div class="flex gap-2 bg-blue-400 rounded-md px-2 py-1 items-center">
-            <Angular />
-            <p class="text-sm">Angular</p>
+  {
+    PROJECTS.map((project) => (
+      <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-4 my-10">
+        <div class="w-full h-[200px] max-h-[280px] lg:h-full lg:max-w-[400px] rounded bg-blue-600"></div>
+        <div>
+          <h1 class="mt-5 text-xl font-semibold mb-5 lg:mt-0">
+            {project.title}
+          </h1>
+          <p class="text-sm md:text-base">{project.description}</p>
+          <div class="mt-5">
+            <div class="grid grid-cols-2 md:flex gap-2 md:gap-4">
+              {project.stack.map((item) => (
+                <div class="flex gap-2 bg-blue-400 rounded-md px-2 py-1 items-center">
+                  <item.icon />
+                  <p class="text-sm">{item.title}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div class="flex gap-2 bg-blue-400 rounded-md px-2 py-1 items-center">
-            <Csharp />
-            <p class="text-sm">ASP .NET</p>
-          </div>
-          <div class="flex gap-2 bg-blue-400 rounded-md px-2 py-1 items-center">
-            <Sql />
-            <p class="text-sm">MSSQL</p>
-          </div>
-          <div class="flex gap-2 bg-blue-400 rounded-md px-2 py-1 items-center">
-            <Tailwind />
-            <p class="text-sm">Tailwind</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex gap-2 xl:gap-4 mt-5 lg:mt-7">
-        <a class="p-2 flex gap-2 border border-blue-600 w-fit rounded" href="">
-          <GitHub />
-          Ver codigo
-        </a>
-        <a class="p-2 flex gap-2 border border-blue-600 w-fit rounded" href="">
-          <Eye />
-          Live preview
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- <div class="flex flex-col lg:grid lg:grid-cols-2 my-10">
-    <div class="w-full h-[200px] xl:w-[400px] xl:h-[280px] rounded bg-blue-600"></div>
-    <div>
-      <h1 class="text-xl font-semibold mb-5">Proyecto de una api</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
-        magnam eveniet reprehenderit maxime, odit fugit quasi, distinctio
-        aliquid cum molestias ea repellendus accusantium dolore impedit enim
-        soluta animi rerum expedita.
-      </p>
-      <div class="mt-5">
-        <div class="flex gap-1 xl:gap-4">
-          <div class="flex gap-2 bg-blue-400 rounded-md px-2 py-1 items-center">
-            <React />
-            <p class="text-sm">React</p>
-          </div>
-          <div class="flex gap-2 bg-blue-400 rounded-md px-2 py-1 items-center">
-            <Nodejs />
-            <p class="text-sm">Node js</p>
-          </div>
-          <div class="flex gap-2 bg-blue-400 rounded-md px-2 py-1 items-center">
-            <Sql />
-            <p class="text-sm">PostgreSql</p>
-          </div>
-          <div class="flex gap-2 bg-blue-400 rounded-md px-2 py-1 items-center">
-            <Tailwind />
-            <p class="text-sm">Tailwind</p>
+          <div class="flex gap-2 xl:gap-4 mt-5 lg:mt-7">
+            <a
+              class="p-2 flex gap-2 border border-blue-600 w-fit rounded"
+              href={project.code}
+            >
+              <GitHub />
+              Ver codigo
+            </a>
+            <a
+              class="p-2 flex gap-2 border border-blue-600 w-fit rounded"
+              href={project.preview}
+            >
+              <Eye />
+              Live preview
+            </a>
           </div>
         </div>
       </div>
-      <div class="flex gap-4 mt-10">
-        <a class="p-2 flex gap-2 border border-blue-600 w-fit rounded" href="">
-          <GitHub />
-          Ver codigo
-        </a>
-        <a class="p-2 flex gap-2 border border-blue-600 w-fit rounded" href="">
-          <Eye />
-          Live preview
-        </a>
-      </div>
-    </div>
-  </div> -->
-  <!-- <div class="flex flex-col lg:grid lg:grid-cols-2 my-10">
-    <div class="w-[400px] h-[280px] rounded bg-blue-600"></div>
-    <div>
-      <h1 class="text-xl font-semibold mb-5">Proyecto de una api</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
-        magnam eveniet reprehenderit maxime, odit fugit quasi, distinctio
-        aliquid cum molestias ea repellendus accusantium dolore impedit enim
-        soluta animi rerum expedita.
-      </p>
-      <div class="mt-5">
-        <div class="flex gap-1 xl:gap-4">
-          <div class="flex gap-2 bg-blue-400 rounded-md px-2 py-1 items-center">
-            <Nextjs />
-            <p class="text-sm">Nextjs</p>
-          </div>
-          <div class="flex gap-2 bg-blue-400 rounded-md px-2 py-1 items-center">
-            <Python />
-            <p class="text-sm">Python</p>
-          </div>
-          <div class="flex gap-2 bg-blue-400 rounded-md px-2 py-1 items-center">
-            <Mongo />
-            <p class="text-sm">Mongo DB</p>
-          </div>
-          <div class="flex gap-2 bg-blue-400 rounded-md px-2 py-1 items-center">
-            <Tailwind />
-            <p class="text-sm">Tailwind</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex gap-4 mt-10">
-        <a class="p-2 flex gap-2 border border-blue-600 w-fit rounded" href="">
-          <GitHub />
-          Ver codigo
-        </a>
-        <a class="p-2 flex gap-2 border border-blue-600 w-fit rounded" href="">
-          <Eye />
-          Live preview
-        </a>
-      </div>
-    </div>
-  </div> -->
+    ))
+  }
 </section>
