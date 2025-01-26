@@ -112,19 +112,19 @@ const SKILLS = [
 ];
 ---
 
-<section class="mx-auto max-w-5xl my-40" id="skills">
+<section class="mt-20 px-4 lg:mx-auto max-w-5xl lg:mt-40" id="skills">
   <div>
     <h1 class="text-balance text-xl font-bold tracking-tight sm:text-3xl">
       SKILLS
     </h1>
   </div>
-  <div class="grid grid-cols-3 mt-10">
+  <div class="flex flex-col md:flex-row gap-y-6 md:gap-4 lg:gap-6 lg:grid lg:grid-cols-3 mt-10">
     {
       SKILLS.map((skill) => (
-        <div class="max-w-xs rounded overflow-hidden bg-gradient-to-r from-[#3b82f6]/80 to-[#4f46e5]/80 flex flex-col justify-between">
+        <div class="lg:max-w-xs rounded overflow-hidden bg-gradient-to-r from-[#3b82f6]/80 to-[#4f46e5]/80 flex flex-col justify-between">
           <div class="px-4 py-4">
             <div class="font-bold text-xl mb-2">{skill.title}</div>
-            <p class="text-pretty">{skill.description}</p>
+            <p class="text-pretty text-sm lg:text-base">{skill.description}</p>
           </div>
           <div class="grid grid-cols-4 px-6 py-4 gap-2 justify-items-center">
             {skill.items.map((item) => (

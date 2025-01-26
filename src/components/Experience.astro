@@ -114,21 +114,21 @@ const EXPERIENCE = [
 ];
 ---
 
-<section class="mx-auto max-w-5xl my-40" id="experience">
+<section class="mt-20 px-4 mx-auto max-w-5xl lg:mt-40" id="experience">
   <div>
     <h1 class="text-balance text-xl font-bold tracking-tight sm:text-3xl">
       PROFESSIONAL EXPERIENCE
     </h1>
   </div>
   <div class="mt-10">
-    <ol class="relative border-s border-gray-200">
+    <ol class="relative lg:ml-5 lg:border-s md:border-gray-200">
       {
         EXPERIENCE.map((exp) => (
-          <li class="mb-10 ms-6">
-            <span class="absolute flex items-center justify-center p-1 rounded-full -start-4 ring-4 bg-gradient-to-r from-[#0e7490] from-10% via-[#3b82f6] via-30% to-[#4f46e5] to-90%">
+          <li class="mb-10 lg:ms-10 xl:ms-6">
+            <span class="hidden absolute lg:flex items-center justify-center p-1 rounded-full lg:-start-4 ring-4 bg-gradient-to-r from-[#0e7490] from-10% via-[#3b82f6] via-30% to-[#4f46e5] to-90%">
               <Calendar />
             </span>
-            <div class="grid grid-cols-2 items-center">
+            <div class="md:grid md:grid-cols-2 xl:items-center">
               <div>
                 <h3 class="flex items-center mb-1 text-xl font-semibold">
                   {exp.title}
@@ -139,7 +139,7 @@ const EXPERIENCE = [
                 </time>
                 <div class="mt-5">
                   <p class="pb-2">Key skills</p>
-                  <div class="flex gap-2">
+                  <div class="flex mb-5 gap-2 lg:mb-0">
                     {exp.skills.map((skill) => (
                       <skill.icon />
                     ))}
@@ -147,7 +147,7 @@ const EXPERIENCE = [
                 </div>
               </div>
               <div class="text-gray-200">
-                <p class="text-pretty font-normal">{exp.description}</p>
+                <p class="text-pretty font-normal text-sm md:text-base">{exp.description}</p>
                 <div class="mt-2">
                   <a
                     class="text-[#3b82f6] p-2 flex justify-start w-fit hover:text-white"
