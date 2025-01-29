@@ -1,31 +1,42 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <footer
   class="mt-20 px-4 xl:mx-auto max-w-5xl lg:mt-40 relative text-center border-t-2"
 >
   <div class="py-8 md:py-14 xl:pt-20 xl:pb-12">
     <h2 class="font-bold text-lg lg:text-3xl xl:text-4xl leading-snug">
-      Are you ready to take the selection process to the next level?
+      {t("footer.description")}
     </h2>
     <a
       class="mt-8 xl:mt-12 px-4 py-2 lg:px-10 lg:py-3 text-sm lg:text-lg font-semibold leading-tight inline-block rounded-full border border-transparent bg-gradient-to-r from-[#0e7490] via-[#3b82f6] to-[#4f46e5]
         transition delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 hover:from-[#4f46e5] hover:to-[#0e7490] hover:shadow-md hover:shadow-[#3b82f6]/60"
       href="https://www.linkedin.com/in/deyvi-tabora"
       target="_blank"
-      rel="noopener">CONTACT ME</a
+      rel="noopener">{t("footer.contact")}</a
     >
     <div class="mt-14 xl:mt-20">
       <nav
         class="flex flex-wrap justify-center gap-4 text-sm lg:text-lg font-medium"
       >
-        <a href="#top">HOME</a>
-        <a href="#experience">EXPERIENCE</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#about-me">ABOUT ME</a>
+        <a href="#top">{t("nav.home")}</a>
+        <a href="#experience">{t("nav.exp")}</a>
+        <a href="#projects">{t("nav.project")}</a>
+        <a href="#skills">{t("nav.skill")}</a>
+        <a href="#about-me">{t("nav.about")}</a>
       </nav>
-      <p class="mt-7 text-sm lg:text-base">Created by <span class="text-[#3b82f6] font-semibold">Deyvi Tabora</span></p>
+      <p class="mt-7 text-sm lg:text-base">
+        {t("footer.createdBy")}
+        <span class="text-[#3b82f6] font-semibold">Deyvi Tabora</span>
+      </p>
       <p>
-        <span class="font-bold text-sm lg:text-base text-[#3b82f6]">Astro</span> & <span
-          class="font-bold text-sm lg:text-base text-[#3b82f6]">Tailwind CSS</span
+        <span class="font-bold text-sm lg:text-base text-[#3b82f6]">Astro</span>
+        & <span class="font-bold text-sm lg:text-base text-[#3b82f6]"
+          >Tailwind CSS</span
         >
       </p>
     </div>

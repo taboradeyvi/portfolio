@@ -1,45 +1,38 @@
 ---
 import me from "../assets/me2.png";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section class="mt-20 px-4 mx-auto max-w-5xl lg:mt-40" id="about-me">
   <div>
     <h1 class="text-balance text-xl font-bold tracking-tight sm:text-3xl">
-      ABOUT ME
+      {t("aboutMe.title")}
     </h1>
   </div>
   <div class="flex flex-col gap-4 mt-10">
-    <div class="flex flex-col md:flex-row gap-4">
-      <div class="px-2 text-center pt-2 rounded-2xl bg-blue-400">
+    <div class="flex flex-col md:flex-row gap-4 lg:items-center">
+      <div
+        class="flex flex-col justify-end px-2 text-center pt-2 rounded-2xl bg-blue-400"
+      >
         <img
-          class="inline-block rounded-lg w-40 md:w-96 lg:w-36"
+          class="inline-block rounded-lg max-h-44 xl:max-w-16"
           src={me.src}
           alt="Deyvi Tabora"
           loading="lazy"
         />
       </div>
       <p class="text-sm md:text-base">
-        I'm a 25-year-old Systems Engineering student from Honduras. I'm
-        passionate about soccer and a loyal Juventus fan. I consider myself a
-        competitive and perfectionist individual, always striving to give my
-        best in everything I do. In my free time, I usually spend a lot of time
-        with my friends playing video games or discussing series and anime.
+        {t("aboutMe.firstParagraph")}
       </p>
     </div>
     <p class="text-sm md:text-base">
-      Technology is one of my greatest passions, not just as a professional tool
-      but also as a means to innovate and continuously learn. I always work on
-      strengthening my weaknesses, and I'm currently focusing on improving my
-      English, which is at an intermediate level (B1). This goal is not only a
-      personal milestone but also a way to expand my professional growth
-      opportunities.
+      {t("aboutMe.secondParagraph")}
     </p>
     <p class="text-sm md:text-base">
-      For me, software development represents a continuous process of learning
-      and self-improvement, both professionally and personally. My focus is on
-      overcoming any challenge that demands creativity and dedication, pushing
-      myself to expand my skills and make a difference in every project and
-      challenge I face throughout my professional career.
+      {t("aboutMe.thirdParagraph")}
     </p>
   </div>
 </section>

@@ -1,126 +1,23 @@
 ---
-import React from "./icons/React.astro";
-import Sql from "./icons/Sql.astro";
-import Angular from "./icons/Angular.astro";
-import Csharp from "./icons/Csharp.astro";
-import Nextjs from "./icons/Nextjs.astro";
-import Azure from "./icons/Azure.astro";
-import Mongo from "./icons/Mongo.astro";
-import Tailwind from "./icons/Tailwind.astro";
-import Python from "./icons/Python.astro";
-import Flutter from "./icons/Flutter.astro";
-import Bootstrap from "./icons/Bootstrap.astro";
-import JavaScript from "./icons/JavaScript.astro";
-import TypeScript from "./icons/TypeScript.astro";
-import Nodejs from "./icons/Nodejs.astro";
-import Css from "./icons/Css.astro";
-import VSCode from "./icons/VisualStudioCode.astro";
-import VS from "./icons/VisualStudio.astro";
-import Vercel from "./icons/Vercel.astro";
-import Trello from "./icons/Trello.astro";
-import Postgresql from "./icons/Postgresql.astro";
-import Slack from "./icons/Slack.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { content } from "../i18n/ui";
 
-const SKILLS = [
-  {
-    title: "Backend",
-    description:
-      "Throughout my career as a software developer, I have excelled primarily in backend development, which is my strength, and in which I perform most effectively, working with various technologies, patterns, and software architectures.",
-    items: [
-      {
-        icon: Csharp,
-      },
-      {
-        icon: Nodejs,
-      },
-      {
-        icon: Python,
-      },
-      {
-        icon: TypeScript,
-      },
-      {
-        icon: JavaScript,
-      },
-      {
-        icon: Sql,
-      },
-      {
-        icon: Mongo,
-      },
-      {
-        icon: Postgresql,
-      },
-    ],
-  },
-  {
-    title: "Frontend",
-    description:
-      "I have the ability to work with various frameworks and libraries for frontend development, where my strongest skills are focused on Angular and React, which I usually work with for styling using Tailwind Css.",
-    items: [
-      {
-        icon: Angular,
-      },
-      {
-        icon: React,
-      },
-      {
-        icon: Nextjs,
-      },
-      {
-        icon: Flutter,
-      },
-      {
-        icon: JavaScript,
-      },
-      {
-        icon: Tailwind,
-      },
-      {
-        icon: Bootstrap,
-      },
-      {
-        icon: Css,
-      },
-    ],
-  },
-  {
-    title: "Tools & cloud",
-    description:
-      "I love the tools created by Microsoft, which is why using them stands out in my daily routine. Additionally, the private cloud services they provide are one of my skills that I want to develop even further.",
-    items: [
-      {
-        icon: VS,
-      },
-      {
-        icon: VSCode,
-      },
-      {
-        icon: Vercel,
-      },
-      {
-        icon: Trello,
-      },
-      {
-        icon: Slack,
-      },
-      {
-        icon: Azure,
-      },
-    ],
-  },
-];
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const SKILLS = content[lang].skills;
 ---
 
 <section class="mt-20 px-4 lg:mx-auto max-w-5xl lg:mt-40" id="skills">
   <div>
     <h1 class="text-balance text-xl font-bold tracking-tight sm:text-3xl">
-      SKILLS
+      {t("skills.title")}
     </h1>
   </div>
-  <div class="flex flex-col md:flex-row gap-y-6 md:gap-4 lg:gap-6 lg:grid lg:grid-cols-3 mt-10">
+  <div
+    class="flex flex-col md:flex-row gap-y-6 md:gap-4 lg:gap-6 lg:grid lg:grid-cols-3 mt-10"
+  >
     {
-      SKILLS.map((skill) => (
+      SKILLS.skillsList.map((skill) => (
         <div class="lg:max-w-xs rounded overflow-hidden bg-gradient-to-r from-[#3b82f6]/80 to-[#4f46e5]/80 flex flex-col justify-between">
           <div class="px-4 py-4">
             <div class="font-bold text-xl mb-2">{skill.title}</div>

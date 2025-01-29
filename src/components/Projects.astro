@@ -11,6 +11,10 @@ import Sql from "./icons/Sql.astro";
 import Nextjs from "./icons/Nextjs.astro";
 import Eye from "./icons/Eye.astro";
 import Tailwind from "./icons/Tailwind.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const PROJECTS = [
   {

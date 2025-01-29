@@ -1,44 +1,52 @@
 ---
 // Supports weights 100-900
-import '@fontsource-variable/onest';
-import Footer from '../components/Footer.astro';
-import Navbar from '../components/Navbar.astro';
+import "@fontsource-variable/onest";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+const currentLang = Astro.currentLocale || "es";
 ---
+
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Portfolio | Deyvi Tabora</title>
-	</head>
-	<body class="bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,_rgba(120,_119,_198,_0.3),_rgba(255,_255,_255,_0))]">
-		<Navbar />
-		<slot />
-		<Footer />
-	</body>
+<html lang={currentLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Portfolio | Deyvi Tabora</title>
+  </head>
+  <body
+    class="bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,_rgba(120,_119,_198,_0.3),_rgba(255,_255,_255,_0))]"
+  >
+    <Navbar />
+    <slot />
+    <Footer />
+  </body>
 </html>
 
 <style>
-	html{
-		font-family: 'Onest Variable', sans-serif;
-		scroll-behavior: smooth;
-	}
-	body {
-        color: white;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        overscroll-behavior: none;
-		--tw-bg-opacity: 1;
-		background-color: rgb(10 10 10 / var(--tw-bg-opacity, 1));
-		background-image: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0));
-      }
+  html {
+    font-family: "Onest Variable", sans-serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overscroll-behavior: none;
+    --tw-bg-opacity: 1;
+    background-color: rgb(10 10 10 / var(--tw-bg-opacity, 1));
+    background-image: radial-gradient(
+      ellipse 80% 80% at 50% -20%,
+      rgba(120, 119, 198, 0.3),
+      rgba(255, 255, 255, 0)
+    );
+  }
 
-	@media (prefers-reduced-motion: reduce) {
-        html {
-          scroll-behavior: auto;
-        }
-      }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
 </style>
