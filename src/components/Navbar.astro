@@ -4,6 +4,7 @@ import GitHub from "./icons/GitHub.astro";
 import Github from "./icons/GitHub.astro";
 import LinkedIn from "./icons/LinkedIn.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import LanguagePicker from "./LanguagePicker.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -63,7 +64,7 @@ const t = useTranslations(lang);
             <Github />
             <p class="ml-2">taboradeyvi</p>
           </a>
-          <div class="hidden sm:ml-6 sm:block">
+          <div class="hidden sm:block">
             <div class="flex space-x-4 justify-end">
               <a
                 href="#top"
@@ -90,6 +91,7 @@ const t = useTranslations(lang);
                 class="rounded-md px-3 py-2 text-sm font-medium hover:bg-gradient-to-r hover:from-[#0e7490] hover:via-[#3b82f6] hover:to-[#4f46e5]"
                 >{t("nav.about")}</a
               >
+              <LanguagePicker />
             </div>
           </div>
         </div>

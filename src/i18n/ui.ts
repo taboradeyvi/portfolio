@@ -21,8 +21,8 @@ import Postgresql from "../components/icons/Postgresql.astro";
 import Slack from "../components/icons/Slack.astro";
 
 export const languages = {
-  en: "English",
-  es: "Spanish",
+  en: "EN",
+  es: "ES",
 };
 
 export const defaultLang = "en";
