@@ -159,6 +159,38 @@ export const content = {
         },
       ],
     },
+    projects: {
+      title: "PROYECTOS RECIENTES",
+      codeReview: "Ver código",
+      preview: "Vista previa",
+      items: [
+        {
+          title: "ITSync",
+          description:
+            "Es una herramienta para la gestión de activos tecnológicos, incluyendo equipos y licencias de software. Permite controlar asignaciones, mantenimiento y estados, centralizando la información en un solo lugar. Ideal para departamentos de TI que buscan eficiencia y organización.",
+          stack: [
+            {
+              title: "Angular",
+              icon: Angular,
+            },
+            {
+              title: "ASP .NET",
+              icon: Csharp,
+            },
+            {
+              title: "MSSQL",
+              icon: Sql,
+            },
+            {
+              title: "Tailwind",
+              icon: Tailwind,
+            },
+          ],
+          codeReview: "https://github.com/",
+          preview: "https://github.com/",
+        },
+      ],
+    },
     skills: {
       title: "Habilidades",
       skillsList: [
@@ -395,6 +427,38 @@ export const content = {
               icon: Bootstrap,
             },
           ],
+        },
+      ],
+    },
+    projects: {
+      title: "RECENT PROJECTS",
+      codeReview: "Repository",
+      preview: "Preview",
+      items: [
+        {
+          title: "ITSync",
+          description:
+            "Is a tool for managing technological assets, including equipment and software licenses. It allows control of assignments, maintenance, and statuses, centralizing information in one place. Ideal for IT departments seeking efficiency and organization.",
+          stack: [
+            {
+              title: "Angular",
+              icon: Angular,
+            },
+            {
+              title: "ASP .NET",
+              icon: Csharp,
+            },
+            {
+              title: "MSSQL",
+              icon: Sql,
+            },
+            {
+              title: "Tailwind",
+              icon: Tailwind,
+            },
+          ],
+          codeReview: "https://github.com/",
+          preview: "https://github.com/",
         },
       ],
     },
