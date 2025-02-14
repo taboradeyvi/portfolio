@@ -40,7 +40,7 @@ export const content = {
       name: "Mi nombre es Deyvi Tabora",
       available: "Disponibilidad inmediata",
       description:
-        "Soy un <span class='font-semibold text-sm md:text-xl text-[#3b82f6]' >desarrollador full-stack</span > con amplia experiencia en desarrollo y despliegue de software. Mi motivación está impulsada por la innovación continua y un fuerte compromiso con la excelencia técnica, lo cual se refleja en mi trabajo colaborativo con equipos de desarrollo.",
+        "Soy un <span class='font-semibold text-sm md:text-xl text-[#3b82f6]' >desarrollador full-stack</span> con amplia experiencia en el diseño, desarrollo e implementación de software. Mis principales habilidades incluyen .NET, SQL y Angular, con un enfoque especializado en el desarrollo backend. Me destaco en la creación de soluciones escalables y eficientes, aplicando buenas prácticas de desarrollo, patrones de arquitectura y metodologías ágiles.",
       socialMedia: [
         {
           title: "LinkedIn",
@@ -69,7 +69,7 @@ export const content = {
           company: "Grupo Empresarial Platino",
           date: "Agosto 2021 - Diciembre 2024",
           description:
-            "Propuse, planifiqué y gestioné proyectos de desarrollo de software alineados con las estrategias y objetivos de la empresa. Coordiné al equipo de desarrollo y participé activamente en el seguimiento de proyectos de implementación con terceros. Mi trabajo se centró en desarrollar soluciones personalizadas, integrar sistemas externos, gestionar servidores y bases de datos en la nube, impulsar la mejora continua y apoyar los objetivos estratégicos de la empresa.",
+            "Propuse, planifiqué y gestioné proyectos de desarrollo de software alineados con los objetivos estratégicos de la empresa. Lideré al equipo de desarrollo y supervisé la implementación de soluciones, tanto internas como de terceros. Mi labor incluyó el desarrollo de soluciones personalizadas, la integración de sistemas externos, la administración de servidores y bases de datos en la nube, así como la promoción de la mejora continua para potenciar la eficiencia y el crecimiento empresarial.",
           skills: [
             {
               icon: Csharp,
@@ -178,8 +178,8 @@ export const content = {
               icon: Csharp,
             },
             {
-              title: "MSSQL",
-              icon: Sql,
+              title: "PostgreSQL",
+              icon: Postgresql,
             },
             {
               title: "Tailwind",
@@ -192,7 +192,7 @@ export const content = {
       ],
     },
     skills: {
-      title: "Habilidades",
+      title: "HABILIDADES",
       skillsList: [
         {
           title: "Backend",
@@ -283,6 +283,65 @@ export const content = {
         },
       ],
     },
+    education: {
+      title: "EDUCACIÓN Y CERTIFICADOS",
+      show: "Ver certificado",
+      studies: [
+        {
+          title: "Bachillerato Técnico Profesional en Informática",
+          institution: "Instituto Gubernamental El Zapotal",
+          date: "2012 – 2017",
+        },
+        {
+          title: "Técnico Universitario en Diseño y Desarrollo Web",
+          institution: "Centro Universitario Tecnológico (CEUTEC)",
+          date: "2018 - 2020",
+        },
+        {
+          title: "Ingeniería en Informática",
+          institution: "Centro Universitario Tecnológico (CEUTEC)",
+          date: "2021 - Actualmente",
+        },
+      ],
+      certificates: [
+        {
+          title: "Código limpio y principios SOLID",
+          institution: "UDEMY",
+          date: "2024",
+          url: "https://www.udemy.com/certificate/UC-33d23063-3dc7-4ffd-b4b2-f484f1d6dcff/",
+        },
+        {
+          title: "Arquitectura Software Moderna: DDD, Eventos, Microservicios",
+          institution: "UDEMY",
+          date: "2024",
+          url: "https://www.udemy.com/certificate/UC-33d23063-3dc7-4ffd-b4b2-f484f1d6dcff/",
+        },
+        {
+          title: "Clean Architecture y Domain Driven Design en ASP.NET Core 8",
+          institution: "UDEMY",
+          date: "2024",
+          url: "https://www.udemy.com/certificate/UC-33d23063-3dc7-4ffd-b4b2-f484f1d6dcff/",
+        },
+        {
+          title: "Curso Completo de Microsoft Azure Fundamentals AZ-900 – 2025",
+          institution: "UDEMY",
+          date: "2024",
+          url: "https://www.udemy.com/certificate/UC-33d23063-3dc7-4ffd-b4b2-f484f1d6dcff/",
+        },
+        {
+          title: "Diseño de Sistemas a Gran Escala y Arquitectura de Software",
+          institution: "UDEMY",
+          date: "2024",
+          url: "https://www.udemy.com/certificate/UC-33d23063-3dc7-4ffd-b4b2-f484f1d6dcff/",
+        },
+        {
+          title: "Scrum Master y Product Owner Certificación. Temario completo",
+          institution: "UDEMY",
+          date: "2024",
+          url: "https://www.udemy.com/certificate/UC-4d96441d-b736-49a5-af83-2bc72415b7fc/",
+        },
+      ],
+    },
     aboutMe: {
       title: "ACERCA DE MI",
       firstParagraph:
@@ -311,7 +370,7 @@ export const content = {
       name: "I'm Deyvi Tabora",
       available: "Available to work",
       description:
-        "I'm a <span class='font-semibold text-sm md:text-xl text-[#3b82f6]' >full-stack developer</span > with extensive experience in software development and deployment. My motivation is driven by continuous innovation and a strong commitment to achieving technical excellence, which is reflected in my collaborative work with development teams.",
+        "I am a <span class='font-semibold text-sm md:text-xl text-[#3b82f6]'>full-stack developer</span> with extensive experience in software design, development, and implementation. My main skills include .NET, SQL, and Angular, with a strong focus on backend development. I excel at creating scalable and efficient solutions, applying best development practices, architectural patterns, and agile methodologies.",
       socialMedia: [
         {
           title: "LinkedIn",
@@ -340,7 +399,7 @@ export const content = {
           company: "Platino Business Group",
           date: "August 2021 – December 2024",
           description:
-            "I proposed, planned, and managed software development projects aligned with the company’s strategies and objectives. I coordinated the development team and actively participated in monitoring third-party implementation projects. My work focused on developing custom solutions, integrating external systems, managing cloud-based servers and databases, driving continuous improvement, and supporting the company's strategic goals.",
+            "I proposed, planned and managed software development projects aligned with the company's strategic objectives. I led the development team and oversaw the implementation of solutions, both internal and third-party. My work included the development of customized solutions, the integration of external systems, the administration of servers and cloud databases, as well as the promotion of continuous improvement to boost efficiency and business growth.",
           skills: [
             {
               icon: Csharp,
@@ -449,8 +508,8 @@ export const content = {
               icon: Csharp,
             },
             {
-              title: "MSSQL",
-              icon: Sql,
+              title: "PostgreSQL",
+              icon: Postgresql,
             },
             {
               title: "Tailwind",
@@ -463,7 +522,7 @@ export const content = {
       ],
     },
     skills: {
-      title: "Habilidades",
+      title: "SKILLS",
       skillsList: [
         {
           title: "Backend",
@@ -551,6 +610,68 @@ export const content = {
               icon: Azure,
             },
           ],
+        },
+      ],
+    },
+    education: {
+      title: "EDUCATION AND CERTIFICATES",
+      show: "Show certificate",
+      studies: [
+        {
+          title: "Technical High School Diploma in Computer Science",
+          institution: "El Zapotal Government Institute",
+          date: "2012 – 2017",
+        },
+        {
+          title: "University Technician in Web Design and Development",
+          institution: "University Technology Center (CEUTEC)",
+          date: "2018 - 2020",
+        },
+        {
+          title: "Systems Engineering",
+          institution: "University Technology Center (CEUTEC)",
+          date: "2021 - Present",
+        },
+      ],
+      certificates: [
+        {
+          title: " Clean Code and SOLID Principles",
+          institution: "UDEMY",
+          date: "2024",
+          url: "https://www.udemy.com/certificate/UC-33d23063-3dc7-4ffd-b4b2-f484f1d6dcff/",
+        },
+        {
+          title: "Modern Software Architecture: DDD, Events, Microservices",
+          institution: "UDEMY",
+          date: "2024",
+          url: "https://www.udemy.com/certificate/UC-33d23063-3dc7-4ffd-b4b2-f484f1d6dcff/",
+        },
+        {
+          title:
+            "Clean Architecture and Domain Driven Design in ASP.NET Core 8",
+          institution: "UDEMY",
+          date: "2024",
+          url: "https://www.udemy.com/certificate/UC-33d23063-3dc7-4ffd-b4b2-f484f1d6dcff/",
+        },
+        {
+          title:
+            "Complete Course on Microsoft Azure Fundamentals AZ-900 – 2025",
+          institution: "UDEMY",
+          date: "2024",
+          url: "https://www.udemy.com/certificate/UC-33d23063-3dc7-4ffd-b4b2-f484f1d6dcff/",
+        },
+        {
+          title: "Large-Scale System Design and Software Architecture",
+          institution: "UDEMY",
+          date: "2024",
+          url: "https://www.udemy.com/certificate/UC-33d23063-3dc7-4ffd-b4b2-f484f1d6dcff/",
+        },
+        {
+          title:
+            "Scrum Master and Product Owner Certification. Complete syllabus",
+          institution: "UDEMY",
+          date: "2024",
+          url: "https://www.udemy.com/certificate/UC-4d96441d-b736-49a5-af83-2bc72415b7fc/",
         },
       ],
     },

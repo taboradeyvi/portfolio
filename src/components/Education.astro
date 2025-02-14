@@ -1,0 +1,66 @@
+---
+import Calendar from "./icons/Calendar.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { content } from "../i18n/ui";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const EDUCATION = content[lang].education;
+---
+
+<section class="mt-20 px-4 lg:mx-auto max-w-5xl lg:mt-40" id="skills">
+  <div>
+    <h1 class="text-balance text-xl font-bold tracking-tight sm:text-3xl">
+      {t("education.title")}
+    </h1>
+  </div>
+  <ol class="items-center sm:flex mt-10">
+    {
+      EDUCATION.studies.map((study) => (
+        <li class="relative mb-6 sm:mb-0">
+          <div class="flex items-center">
+            <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+              <span class="hidden absolute lg:flex items-center justify-center p-1 rounded-full ring-4 bg-gradient-to-r from-[#0e7490] from-10% via-[#3b82f6] via-30% to-[#4f46e5] to-90%">
+                <Calendar />
+              </span>
+            </div>
+            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
+          </div>
+          <div class="mt-5 sm:pe-6">
+            <h3 class="text-sm font-semibold text-gray-900 dark:text-white">
+              {study.title}
+            </h3>
+            <span class="text-sm font-normal leading-none text-gray-300">
+              {study.institution}
+            </span>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400">
+              {study.date}
+            </time>
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+  <div class="grid grid-cols-3 gap-4 mt-20">
+    {
+      EDUCATION.certificates.map((certificate) => (
+        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900 dark:text-white">
+            {certificate.title}
+          </h5>
+          <p class="text-sm text-gray-300 mb-2">
+            {certificate.institution} - {certificate.date}
+          </p>
+          <a
+            class="text-[#3b82f6]"
+            href={certificate.url}
+            target="_blank"
+            rel="noopener"
+          >
+            {t("education.show")}
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</section>
