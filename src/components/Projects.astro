@@ -27,7 +27,10 @@ const PROJECTS = content[lang].projects;
           <div class="mt-5">
             <div class="flex flex-wrap gap-2 md:gap-4">
               {project.stack.map((item) => (
-                <div class="flex gap-2 w-fit bg-gradient-to-r from-[#0e7490] via-[#3b82f6] to-[#4f46e5] rounded-lg px-1 md:px-2 py-1 items-center">
+                <div
+                  class="flex gap-2 w-fit bg-gradient-to-r from-[#0e7490] via-[#3b82f6] to-[#4f46e5] rounded-lg px-1 md:px-2 py-1 items-center shadow-lg transition-transform transform 
+           hover:scale-105 hover:shadow-xl"
+                >
                   <item.icon />
                   <p class="text-sm">{item.title}</p>
                 </div>
@@ -36,7 +39,8 @@ const PROJECTS = content[lang].projects;
           </div>
           <div class="flex gap-2 xl:gap-4 mt-5 lg:mt-7">
             <a
-              class="p-2 flex gap-2 border w-fit rounded-lg"
+              class="p-2 flex gap-2 border w-fit rounded-lg shadow-lg transition-transform transform 
+           hover:scale-105 hover:shadow-xl"
               href={project.codeReview}
               target="_blank"
               rel="noopener"
@@ -45,7 +49,8 @@ const PROJECTS = content[lang].projects;
               {t("projects.codeReview")}
             </a>
             <a
-              class="p-2 flex gap-2 border w-fit rounded-lg"
+              class="p-2 flex gap-2 border w-fit rounded-lg shadow-lg transition-transform transform 
+           hover:scale-105 hover:shadow-xl"
               href={project.preview}
               target="_blank"
               rel="noopener"
