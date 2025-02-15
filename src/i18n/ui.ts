@@ -51,7 +51,7 @@ export const content = {
       name: "Mi nombre es Deyvi Tabora",
       available: "Disponibilidad inmediata",
       description:
-        "Soy un <span class='font-semibold text-sm md:text-xl text-[#3b82f6]' >desarrollador full-stack</span> con amplia experiencia en el diseño, desarrollo e implementación de software. Mis principales habilidades incluyen .NET, SQL y Angular, con un enfoque especializado en el desarrollo backend. Me destaco en la creación de soluciones escalables y eficientes, aplicando buenas prácticas de desarrollo, patrones de arquitectura y metodologías ágiles.",
+        "Soy un <span class='font-semibold text-[#3b82f6]' >desarrollador full-stack</span> con amplia experiencia en el diseño, desarrollo e implementación de software. <span class='font-semibold text-[#3b82f6]'>Mis principales habilidades incluyen .NET, SQL y Angular</span>, con un enfoque especializado en el desarrollo backend. Me destaco en la creación de soluciones escalables y eficientes, aplicando buenas prácticas de desarrollo, patrones de arquitectura y metodologías ágiles.",
       socialMedia: [
         {
           title: "LinkedIn",
@@ -466,7 +466,7 @@ export const content = {
       name: "I'm Deyvi Tabora",
       available: "Available to work",
       description:
-        "I am a <span class='font-semibold text-sm md:text-xl text-[#3b82f6]'>full-stack developer</span> with extensive experience in software design, development, and implementation. My main skills include .NET, SQL, and Angular, with a strong focus on backend development. I excel at creating scalable and efficient solutions, applying best development practices, architectural patterns, and agile methodologies.",
+        "I am a <span class='font-semibold text-[#3b82f6]'>full-stack developer</span> with extensive experience in software design, development, and implementation. <span class='font-semibold text-[#3b82f6]'>My main skills include .NET, SQL, and Angular</span>, with a strong focus on backend development. I excel at creating scalable and efficient solutions, applying best development practices, architectural patterns, and agile methodologies.",
       socialMedia: [
         {
           title: "LinkedIn",
