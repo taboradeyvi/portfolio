@@ -19,6 +19,17 @@ import Vercel from "../components/icons/Vercel.astro";
 import Trello from "../components/icons/Trello.astro";
 import Postgresql from "../components/icons/Postgresql.astro";
 import Slack from "../components/icons/Slack.astro";
+import Html from "../components/icons/Html.astro";
+import AstroLogo from "../components/icons/AstroLogo.astro";
+import Git from "../components/icons/Git.astro";
+import GitHub from "../components/icons/GitHub.astro";
+import Gitlab from "../components/icons/Gitlab.astro";
+import Code from "../components/icons/Code.astro";
+import Scrum from "../components/icons/Scrum.astro";
+import Jira from "../components/icons/Jira.astro";
+import Windows from "../components/icons/Windows.astro";
+import Mac from "../components/icons/Mac.astro";
+import Linux from "../components/icons/Linux.astro";
 
 export const languages = {
   en: "EN",
@@ -195,91 +206,176 @@ export const content = {
       title: "HABILIDADES",
       skillsList: [
         {
-          title: "Backend",
-          description:
-            "A lo largo de mi carrera como desarrollador de software, me he destacado principalmente en el desarrollo backend, que es mi fortaleza y donde me desempeño con mayor eficacia, trabajando con diversas tecnologías, patrones y arquitecturas de software.",
-          items: [
-            {
-              icon: Csharp,
-            },
-            {
-              icon: Nodejs,
-            },
-            {
-              icon: Python,
-            },
-            {
-              icon: TypeScript,
-            },
-            {
-              icon: JavaScript,
-            },
-            {
-              icon: Sql,
-            },
-            {
-              icon: Mongo,
-            },
-            {
-              icon: Postgresql,
-            },
-          ],
+          icon: Csharp,
+          name: "ASP .Net",
         },
         {
-          title: "Frontend",
-          description:
-            "Tengo la capacidad de trabajar con varios frameworks y bibliotecas para el desarrollo frontend, donde mis habilidades más fuertes se enfocan en Angular y React, y suelo utilizar Tailwind CSS para el estilizado.",
-          items: [
-            {
-              icon: Angular,
-            },
-            {
-              icon: React,
-            },
-            {
-              icon: Nextjs,
-            },
-            {
-              icon: Flutter,
-            },
-            {
-              icon: JavaScript,
-            },
-            {
-              icon: Tailwind,
-            },
-            {
-              icon: Bootstrap,
-            },
-            {
-              icon: Css,
-            },
-          ],
+          icon: Nodejs,
+          name: "Node.js",
         },
         {
-          title: "Herramientas y Nube",
-          description:
-            "Me encantan las herramientas creadas por Microsoft, por lo que su uso destaca en mi rutina diaria. Además, los servicios de nube privada que ofrecen son una de las habilidades que quiero desarrollar aún más.",
-          items: [
-            {
-              icon: VS,
-            },
-            {
-              icon: VSCode,
-            },
-            {
-              icon: Vercel,
-            },
-            {
-              icon: Trello,
-            },
-            {
-              icon: Slack,
-            },
-            {
-              icon: Azure,
-            },
-          ],
+          icon: Python,
+          name: "Python",
+        },
+        {
+          icon: TypeScript,
+          name: "TypeScript",
+        },
+        {
+          icon: JavaScript,
+          name: "JavaScript",
+        },
+        {
+          icon: Sql,
+          name: "MSSQL",
+        },
+        {
+          icon: Mongo,
+          name: "MongoDB",
+        },
+        {
+          icon: Postgresql,
+          name: "PostgreSQL",
+        },
+        {
+          icon: Html,
+          name: "Html",
+        },
+        {
+          icon: Angular,
+          name: "Angular",
+        },
+        {
+          icon: React,
+          name: "React js",
+        },
+        {
+          icon: Nextjs,
+          name: "Next.js",
+        },
+        {
+          icon: AstroLogo,
+          name: "Astro",
+        },
+        {
+          icon: Flutter,
+          name: "Flutter",
+        },
+        {
+          icon: Tailwind,
+          name: "Tailwind",
+        },
+        {
+          icon: Bootstrap,
+          name: "Bootstrap",
+        },
+        {
+          icon: Css,
+          name: "Css",
+        },
+        {
+          icon: Git,
+          name: "Git",
+        },
+        {
+          icon: GitHub,
+          name: "GitHub",
+        },
+        {
+          icon: Gitlab,
+          name: "GitLab",
+        },
+        {
+          icon: VS,
+          name: "Visual Studio",
+        },
+        {
+          icon: VSCode,
+          name: "Visual Studio code",
+        },
+        {
+          icon: Vercel,
+          name: "Vercel",
+        },
+        {
+          icon: Scrum,
+          name: "SCRUM",
+        },
+        {
+          icon: Jira,
+          name: "Jira",
+        },
+        {
+          icon: Trello,
+          name: "Trello",
+        },
+        {
+          icon: Slack,
+          name: "Slack",
+        },
+        {
+          icon: Azure,
+          name: "Azure",
+        },
+        {
+          icon: Windows,
+          name: "Windows",
+        },
+        {
+          icon: Mac,
+          name: "Mac OS",
+        },
+        {
+          icon: Linux,
+          name: "Linux",
+        },
+        {
+          icon: Code,
+          name: "API Development",
+        },
+        {
+          icon: Code,
+          name: "Responsive Design",
+        },
+        {
+          icon: Code,
+          name: "Clean Code",
+        },
+        {
+          icon: Code,
+          name: "SAP Service Layer",
+        },
+        {
+          icon: Code,
+          name: "Clean Architecture",
+        },
+        {
+          icon: Code,
+          name: "Hexagonal Architecture",
+        },
+        {
+          icon: Code,
+          name: "Domain Driven Design (DDD)",
+        },
+        {
+          icon: Code,
+          name: "Microservices",
+        },
+        {
+          icon: Code,
+          name: "CQRS",
+        },
+        {
+          icon: Code,
+          name: "Repository Pattern",
+        },
+        {
+          icon: Code,
+          name: "Mediator Pattern",
+        },
+        {
+          icon: Code,
+          name: "Result Pattern",
         },
       ],
     },
@@ -525,91 +621,176 @@ export const content = {
       title: "SKILLS",
       skillsList: [
         {
-          title: "Backend",
-          description:
-            "Throughout my career as a software developer, I have excelled primarily in backend development, which is my strength, and in which I perform most effectively, working with various technologies, patterns, and software architectures.",
-          items: [
-            {
-              icon: Csharp,
-            },
-            {
-              icon: Nodejs,
-            },
-            {
-              icon: Python,
-            },
-            {
-              icon: TypeScript,
-            },
-            {
-              icon: JavaScript,
-            },
-            {
-              icon: Sql,
-            },
-            {
-              icon: Mongo,
-            },
-            {
-              icon: Postgresql,
-            },
-          ],
+          icon: Csharp,
+          name: "ASP .Net",
         },
         {
-          title: "Frontend",
-          description:
-            "I have the ability to work with various frameworks and libraries for frontend development, where my strongest skills are focused on Angular and React, which I usually work with for styling using Tailwind Css.",
-          items: [
-            {
-              icon: Angular,
-            },
-            {
-              icon: React,
-            },
-            {
-              icon: Nextjs,
-            },
-            {
-              icon: Flutter,
-            },
-            {
-              icon: JavaScript,
-            },
-            {
-              icon: Tailwind,
-            },
-            {
-              icon: Bootstrap,
-            },
-            {
-              icon: Css,
-            },
-          ],
+          icon: Nodejs,
+          name: "Node.js",
         },
         {
-          title: "Tools & cloud",
-          description:
-            "I love the tools created by Microsoft, which is why using them stands out in my daily routine. Additionally, the private cloud services they provide are one of my skills that I want to develop even further.",
-          items: [
-            {
-              icon: VS,
-            },
-            {
-              icon: VSCode,
-            },
-            {
-              icon: Vercel,
-            },
-            {
-              icon: Trello,
-            },
-            {
-              icon: Slack,
-            },
-            {
-              icon: Azure,
-            },
-          ],
+          icon: Python,
+          name: "Python",
+        },
+        {
+          icon: TypeScript,
+          name: "TypeScript",
+        },
+        {
+          icon: JavaScript,
+          name: "JavaScript",
+        },
+        {
+          icon: Sql,
+          name: "MSSQL",
+        },
+        {
+          icon: Mongo,
+          name: "MongoDB",
+        },
+        {
+          icon: Postgresql,
+          name: "PostgreSQL",
+        },
+        {
+          icon: Html,
+          name: "Html",
+        },
+        {
+          icon: Angular,
+          name: "Angular",
+        },
+        {
+          icon: React,
+          name: "React js",
+        },
+        {
+          icon: Nextjs,
+          name: "Next.js",
+        },
+        {
+          icon: AstroLogo,
+          name: "Astro",
+        },
+        {
+          icon: Flutter,
+          name: "Flutter",
+        },
+        {
+          icon: Tailwind,
+          name: "Tailwind",
+        },
+        {
+          icon: Bootstrap,
+          name: "Bootstrap",
+        },
+        {
+          icon: Css,
+          name: "Css",
+        },
+        {
+          icon: Git,
+          name: "Git",
+        },
+        {
+          icon: GitHub,
+          name: "GitHub",
+        },
+        {
+          icon: Gitlab,
+          name: "GitLab",
+        },
+        {
+          icon: VS,
+          name: "Visual Studio",
+        },
+        {
+          icon: VSCode,
+          name: "Visual Studio code",
+        },
+        {
+          icon: Vercel,
+          name: "Vercel",
+        },
+        {
+          icon: Scrum,
+          name: "SCRUM",
+        },
+        {
+          icon: Jira,
+          name: "Jira",
+        },
+        {
+          icon: Trello,
+          name: "Trello",
+        },
+        {
+          icon: Slack,
+          name: "Slack",
+        },
+        {
+          icon: Azure,
+          name: "Azure",
+        },
+        {
+          icon: Windows,
+          name: "Windows",
+        },
+        {
+          icon: Mac,
+          name: "Mac OS",
+        },
+        {
+          icon: Linux,
+          name: "Linux",
+        },
+        {
+          icon: Code,
+          name: "API Development",
+        },
+        {
+          icon: Code,
+          name: "Responsive Design",
+        },
+        {
+          icon: Code,
+          name: "Clean Code",
+        },
+        {
+          icon: Code,
+          name: "SAP Service Layer",
+        },
+        {
+          icon: Code,
+          name: "Clean Architecture",
+        },
+        {
+          icon: Code,
+          name: "Hexagonal Architecture",
+        },
+        {
+          icon: Code,
+          name: "Domain Driven Design (DDD)",
+        },
+        {
+          icon: Code,
+          name: "Microservices",
+        },
+        {
+          icon: Code,
+          name: "CQRS",
+        },
+        {
+          icon: Code,
+          name: "Repository Pattern",
+        },
+        {
+          icon: Code,
+          name: "Mediator Pattern",
+        },
+        {
+          icon: Code,
+          name: "Result Pattern",
         },
       ],
     },

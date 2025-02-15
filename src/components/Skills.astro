@@ -7,27 +7,24 @@ const t = useTranslations(lang);
 const SKILLS = content[lang].skills;
 ---
 
-<section class="mt-20 px-4 lg:mx-auto max-w-5xl lg:mt-40" id="skills">
+<section class="mt-20 px-4 mx-auto max-w-5xl lg:mt-40" id="skills">
   <div>
     <h1 class="text-balance text-xl font-bold tracking-tight sm:text-3xl">
       {t("skills.title")}
     </h1>
   </div>
-  <div
-    class="flex flex-col md:flex-row gap-y-6 md:gap-4 lg:gap-6 lg:grid lg:grid-cols-3 mt-10"
-  >
+
+  <div class="flex flex-wrap gap-4 mt-10">
     {
       SKILLS.skillsList.map((skill) => (
-        <div class="lg:max-w-xs rounded overflow-hidden bg-gradient-to-r from-[#3b82f6]/80 to-[#4f46e5]/80 flex flex-col justify-between">
-          <div class="px-4 py-4">
-            <div class="font-bold text-xl mb-2">{skill.title}</div>
-            <p class="text-pretty text-sm lg:text-base">{skill.description}</p>
-          </div>
-          <div class="grid grid-cols-4 px-6 py-4 gap-2 justify-items-center">
-            {skill.items.map((item) => (
-              <item.icon />
-            ))}
-          </div>
+        <div
+          class="flex items-center gap-x-2 px-2 py-1 rounded
+           bg-gradient-to-r from-[#3b82f6]/90 to-[#4f46e5]/90
+           text-white shadow-lg transition-transform transform 
+           hover:scale-105 hover:shadow-xl"
+        >
+          <skill.icon />
+          <p class="text-sm font-medium">{skill.name}</p>
         </div>
       ))
     }
