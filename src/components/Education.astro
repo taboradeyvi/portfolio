@@ -19,17 +19,15 @@ const EDUCATION = content[lang].education;
       EDUCATION.studies.map((study) => (
         <li class="relative mb-6 sm:mb-0">
           <div class="flex items-center">
-            <div class="hidden z-10 md:flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+            <div class="hidden z-10 md:flex items-center justify-center w-6 h-6 rounded-full ring-0 bg-blue-900 sm:ring-8 ring-gray-900 shrink-0">
               <span class="absolute flex items-center justify-center p-1 rounded-full ring-4 bg-gradient-to-r from-[#0e7490] from-10% via-[#3b82f6] via-30% to-[#4f46e5] to-90%">
                 <Calendar />
               </span>
             </div>
-            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
+            <div class="hidden sm:flex w-full h-0.5 bg-gray-700" />
           </div>
           <div class="mt-5 sm:pe-6">
-            <h3 class="text-sm font-semibold text-gray-900 dark:text-white">
-              {study.title}
-            </h3>
+            <h3 class="text-sm font-semibold text-white">{study.title}</h3>
             <span class="text-sm font-normal leading-none text-gray-300">
               {study.institution}
             </span>
@@ -44,8 +42,8 @@ const EDUCATION = content[lang].education;
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-20">
     {
       EDUCATION.certificates.map((certificate) => (
-        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-          <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900 dark:text-white">
+        <div class="block max-w-sm p-6 border rounded-lg shadow-sm bg-gray-800 border-gray-700 hover:bg-gray-700">
+          <h5 class="mb-2 text-sm font-bold tracking-tight">
             {certificate.title}
           </h5>
           <p class="text-sm text-gray-300 mb-2">
