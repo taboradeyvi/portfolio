@@ -1,6 +1,7 @@
 ---
-import me from "../assets/me2.png";
+import me from "../assets/me2.webp";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { Image } from "astro:assets";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -17,11 +18,12 @@ const t = useTranslations(lang);
       <div
         class="flex flex-col items-center justify-end px-2 text-center pt-2 rounded-2xl bg-gradient-to-r from-[#0e7490] via-[#3b82f6] to-[#4f46e5]"
       >
-        <img
+        <Image
           class="rounded-lg max-h-44 w-fit max-w-20 xl:max-w-16"
-          src={me.src}
+          src={me}
           alt="Deyvi Tabora"
-          loading="lazy"
+          loading="eager"
+          fetchpriority="high"
         />
       </div>
       <p class="text-sm md:text-base">

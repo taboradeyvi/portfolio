@@ -1,8 +1,14 @@
 ---
 import GitHub from "./icons/GitHub.astro";
 import Eye from "./icons/Eye.astro";
+import { Image } from "astro:assets";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 import { content } from "../i18n/ui";
+import itsync from "../assets/itsync.webp";
+import project_one from "../assets/project_one.webp";
+import project_two from "../assets/project_two.webp";
+import project_three from "../assets/project_three.webp";
+import project_four from "../assets/project_four.webp";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -17,8 +23,16 @@ const PROJECTS = content[lang].projects;
   </div>
   {
     PROJECTS.items.map((project) => (
-      <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-4 my-10">
-        <div class="w-full h-[200px] max-h-[280px] lg:h-full lg:max-w-[400px] rounded-lg bg-gradient-to-r from-[#0e7490] via-[#3b82f6] to-[#4f46e5]" />
+      <div class="flex flex-col items-center lg:grid lg:grid-cols-2 lg:gap-4 my-10">
+        <div class="max-w-[400px] max-h-[300px] rounded-lg bg-gradient-to-r from-[#0e7490] via-[#3b82f6] to-[#4f46e5] overflow-hidden">
+          <Image
+            class="w-full h-full object-cover rounded-lg transition-transform duration-300 group-hover:brightness-50 group-hover:scale-105"
+            src={itsync}
+            alt="ItSync"
+            format="webp"
+          />
+        </div>
+
         <div>
           <h1 class="mt-5 text-xl font-semibold mb-5 lg:mt-0">
             {project.title}
@@ -50,7 +64,7 @@ const PROJECTS = content[lang].projects;
             </a>
             <a
               class="p-2 flex gap-2 border w-fit rounded-lg shadow-lg transition-transform transform 
-           hover:scale-105 hover:shadow-xl"
+                hover:scale-105 hover:shadow-xl"
               href={project.preview}
               target="_blank"
               rel="noopener"
@@ -63,4 +77,78 @@ const PROJECTS = content[lang].projects;
       </div>
     ))
   }
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-20">
+    <div class="relative rounded-lg overflow-hidden group">
+      <Image
+        class="w-full rounded-lg transition-transform duration-300 group-hover:brightness-50 group-hover:scale-105"
+        src={project_one}
+        alt="Project one"
+        format="webp"
+        width={500}
+        height={300}
+      />
+      <a
+        href="https://www.grupoplatino.hn/es"
+        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white font-bold text-sm"
+        target="_blank"
+        rel="noopener"
+      >
+        {t("experience.more")}...
+      </a>
+    </div>
+    <div class="relative rounded-lg overflow-hidden group">
+      <Image
+        class="w-full rounded-lg transition-transform duration-300 group-hover:brightness-50 group-hover:scale-105"
+        src={project_two}
+        alt="Project two"
+        format="webp"
+        width={500}
+        height={300}
+      />
+      <a
+        href="https://www.grupoplatino.hn/es"
+        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white font-bold text-sm"
+        target="_blank"
+        rel="noopener"
+      >
+        {t("experience.more")}...
+      </a>
+    </div>
+    <div class="relative rounded-lg overflow-hidden group">
+      <Image
+        class="w-full rounded-lg transition-transform duration-300 group-hover:brightness-50 group-hover:scale-105"
+        src={project_three}
+        alt="Project three"
+        format="webp"
+        width={500}
+        height={300}
+      />
+      <a
+        href="https://www.grupoplatino.hn/es"
+        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white font-bold text-sm"
+        target="_blank"
+        rel="noopener"
+      >
+        {t("experience.more")}...
+      </a>
+    </div>
+    <div class="relative rounded-lg overflow-hidden group">
+      <Image
+        class="w-full rounded-lg transition-transform duration-300 group-hover:brightness-50 group-hover:scale-105"
+        src={project_four}
+        alt="Project four"
+        format="webp"
+        width={500}
+        height={300}
+      />
+      <a
+        href="https://www.grupoplatino.hn/es"
+        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white font-bold text-sm"
+        target="_blank"
+        rel="noopener"
+      >
+        {t("experience.more")}...
+      </a>
+    </div>
+  </div>
 </section>

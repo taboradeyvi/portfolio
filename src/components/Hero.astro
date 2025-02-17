@@ -7,6 +7,7 @@ import LinkedIn from "./icons/LinkedIn.astro";
 import Download from "./icons/Download.astro";
 import SocialMediaButton from "./SocialMediaButton.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { Image } from "astro:assets";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -52,11 +53,12 @@ const t = useTranslations(lang);
       </div>
     </div>
     <div class="mb-10 text-center">
-      <img
+      <Image
         class="inline-block size-60 lg:size-72 rounded-lg"
-        src={me.src}
+        src={me}
         alt="Deyvi Tabora"
-        loading="lazy"
+        loading="eager"
+        fetchpriority="high"
       />
     </div>
   </article>
