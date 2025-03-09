@@ -48,7 +48,7 @@ export const content = {
       about: "SOBRE MI",
     },
     hero: {
-      name: "Mi nombre es Deyvi Tabora",
+      name: "Hola, soy Deyvi Tabora",
       available: "Disponibilidad inmediata",
       description:
         "Soy un <span class='font-semibold text-[#3b82f6]' >DESARROLLADOR FULL-STACK</span> con amplia experiencia en el diseño, desarrollo e implementación de software. <span class='font-semibold text-[#3b82f6]'>Mis principales habilidades incluyen .NET, SQL y Angular</span>, con un enfoque especializado en el desarrollo backend. Me destaco en la creación de soluciones escalables y eficientes, aplicando buenas prácticas de desarrollo, patrones de arquitectura y metodologías ágiles.",
@@ -75,6 +75,30 @@ export const content = {
       more: "Ver más",
       keySkills: "Habilidades clave",
       listExperiences: [
+        {
+          title: "Desarrollador full-stack",
+          company: "Albatros Tecnología",
+          date: "Febrero 2025 - Actualmente",
+          description:
+            "Me desempeño como desarrollador full-stack, con un enfoque principal en el desarrollo backend. En este rol, he contribuido en el desarrollo y mantenimiento de aplicaciones web escalables y de alto rendimiento. Mis responsabilidades incluyen la gestión y administración de bases de datos, la creación de microservicios y la integración de sistemas de terceros como SAP B1, asegurando una conectividad eficiente y segura entre plataformas.",
+          skills: [
+            {
+              icon: Angular,
+            },
+            {
+              icon: Nodejs,
+            },
+            {
+              icon: TypeScript,
+            },
+            {
+              icon: Tailwind,
+            },
+            {
+              icon: Mongo,
+            },
+          ],
+        },
         {
           title: "Desarrollador full-stack",
           company: "Grupo Empresarial Platino",
@@ -463,10 +487,10 @@ export const content = {
       about: "ABOUT ME",
     },
     hero: {
-      name: "I'm Deyvi Tabora",
+      name: "Hi, i'm Deyvi Tabora",
       available: "Available to work",
       description:
-        "I am a <span class='font-semibold text-[#3b82f6]'>FULL-STACK DEVELOPER</span> with extensive experience in software design, development, and implementation. <span class='font-semibold text-[#3b82f6]'>My main skills include .NET, SQL, and Angular</span>, with a strong focus on backend development. I excel at creating scalable and efficient solutions, applying best development practices, architectural patterns, and agile methodologies.",
+        "I'm a <span class='font-semibold text-[#3b82f6]'>FULL-STACK DEVELOPER</span> with extensive experience in software design, development, and implementation. <span class='font-semibold text-[#3b82f6]'>My main skills include .NET, SQL, and Angular</span>, with a strong focus on backend development. I excel at creating scalable and efficient solutions, applying best development practices, architectural patterns, and agile methodologies.",
       socialMedia: [
         {
           title: "LinkedIn",
@@ -490,6 +514,30 @@ export const content = {
       more: "See more",
       keySkills: "Key skills",
       listExperiences: [
+        {
+          title: "Full-stack Developer",
+          company: "Albatros Tecnology",
+          date: "Febrero 2025 - Actualmente",
+          description:
+            "I work as a full-stack developer with a primary focus on backend development. In this role, I have contributed to the development and maintenance of scalable and high-performance web applications. My responsibilities include managing and administering databases, creating microservices, and integrating third-party systems such as SAP B1, ensuring efficient and secure connectivity between platforms.",
+          skills: [
+            {
+              icon: Angular,
+            },
+            {
+              icon: Nodejs,
+            },
+            {
+              icon: TypeScript,
+            },
+            {
+              icon: Tailwind,
+            },
+            {
+              icon: Mongo,
+            },
+          ],
+        },
         {
           title: "Full-stack Developer",
           company: "Platino Business Group",
