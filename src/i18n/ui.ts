@@ -471,10 +471,22 @@ export const content = {
       thirdParagraph:
         "Para mí, el desarrollo de software representa un proceso continuo de aprendizaje y mejora personal y profesional. Mi enfoque está en superar cualquier desafío que requiera creatividad y dedicación, esforzándome por expandir mis habilidades y marcar la diferencia en cada proyecto y reto que enfrento a lo largo de mi carrera profesional.",
     },
-    footer: {
-      contact: "Contáctame",
-      description:
+    contact: {
+      title: "CONTÁCTAME",
+      subtitle:
         "¿Estás listo para llevar el proceso de selección al siguiente nivel?",
+      description:
+        "¡Conectemos y hagámoslo realidad! Ya sea que estés buscando discutir tu próximo proyecto, colaborar en una idea innovadora o explorar cómo mis habilidades se alinean con los objetivos de tu equipo, estoy listo para contribuir y llevar el proceso al siguiente nivel.",
+      buttom: "Hablemos",
+      form: {
+        firstName: "Primer nombre",
+        lastName: "Primer apellido",
+        email: "Correo electrónico",
+        company: "Empresa",
+        message: "Mensaje",
+      },
+    },
+    footer: {
       createdBy: "Creado por",
     },
   },
@@ -517,7 +529,7 @@ export const content = {
         {
           title: "Full-stack Developer",
           company: "Albatros Tecnology",
-          date: "Febrero 2025 - Actualmente",
+          date: "Febrero 2025 - Current",
           description:
             "I work as a full-stack developer with a primary focus on backend development. In this role, I have contributed to the development and maintenance of scalable and high-performance web applications. My responsibilities include managing and administering databases, creating microservices, and integrating third-party systems such as SAP B1, ensuring efficient and secure connectivity between platforms.",
           skills: [
@@ -913,10 +925,22 @@ export const content = {
       thirdParagraph:
         "For me, software development represents a continuous process of learning and self-improvement, both professionally and personally. My focus is on overcoming any challenge that demands creativity and dedication, pushing myself to expand my skills and make a difference in every project and challenge I face throughout my professional career.",
     },
-    footer: {
-      contact: "Contact me",
-      description:
+    contact: {
+      title: "CONTACT ME",
+      subtitle:
         "Are you ready to take the selection process to the next level?",
+      description:
+        "Let's connect and make it happen! Whether you're looking to discuss your next project, collaborate on an innovative idea, or explore how my skills align with your team's goals, I'm ready to contribute and take the process to the next level.",
+      buttom: "Let's talk",
+      form: {
+        firstName: "First name",
+        lastName: "Last name",
+        email: "Email",
+        company: "Company",
+        message: "Message",
+      },
+    },
+    footer: {
       createdBy: "Created by",
     },
   },
